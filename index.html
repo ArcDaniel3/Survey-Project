@@ -1,0 +1,88 @@
+<DOCYTPE! html>
+  <html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Astronomy Form</title>
+    <style>
+      body {
+  background-color:rgba(10, 0,40)
+}
+h1, p, label {
+  color:#ffffff
+}
+label {
+  margin:10px;
+}
+input {
+  margin:5px;
+}
+div {
+  text-align:center;
+}
+h1, p {
+  text-align:center;
+}
+.divider {
+  margin:5px 0;
+}
+.label {
+  margin-top:10px;
+  margin-bottom:10px
+}
+.file {
+ width:200px;
+}
+#textarea {
+  width:250px;
+  height:60px;
+}
+input[type=checkbox] {
+  margin-bottom:5px;
+}
+input[type=submit] {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+    </style>
+   </head>
+    
+     <body>
+       <h1 id="title">Astronomy Form</h1>
+       <p id="description">Please fill out all the state</p>
+     </body>
+      <form id="survey-form">
+        <div><label id="name-label" >Your Name: <input id="name" type="text" placeholder="Name" required/></label></div>
+        <div><label id="email-label" >Your email: <input id="email" type="email" placeholder="Email" required/></label></div>
+       
+        <div><label>
+        </fieldset> <div><label id="number-label" >Your age: <input id="number" type="number" min="13" max="120" placeholder="Age" /></label></div>
+        <label>What's you most like about space?</label>
+        <select id="dropdown">
+         <option>"       "</option>
+         <option>Nebula</option>
+         <option>Galaxy</option>
+         <option>Star</option>
+         <option>Moon</option>
+         <option>Quasar</option>
+        </select>
+<div><h3>Did you want to be a astronauts:</h3>
+       <div><input id="private" type="radio" name="radio" value="Yes">
+       <label>Yes</label><br>
+
+       <div><input id="business" type="radio" name="radio" value="No">     <label>No<label><br>
+       <div class="divider"><label>If your answer is "No", why?</label></div>
+       <div><textarea placeholder="Because....."></textarea>
+       <div class="label"><label>If your answer is "Yes", tell me What makes you interested in astronomy</label></div>
+       <div><textarea placeholder="Because....."></textarea>
+   <h3>Donate for us?</h3>
+   <input type="checkbox" name="checkbox" value="checkbox1"/>
+   <label>Yes</label>
+   <div class="checkbox2"><input type="checkbox" name="checkbox" value="checkbox2"/>
+   <label>No</label>
+   <div><textarea placeholder="I like this website" id="textarea"></textarea>
+   <div><input type="submit" id="submit">
+      </form>
+  </html>
